@@ -6,14 +6,34 @@ public class Movement : MonoBehaviour
 {
     public Rigidbody rb;
     public float Speed = 1;
-    
+    private bool gotInput = false;
+
     void Update()
     {
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
+        if (Input.GetKey(KeyCode.W))
+        {
+            rb.AddForce(new Vector3(1, 0, 0) * Speed * Time.deltaTime, ForceMode.VelocityChange);
+            gotInput = true;
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            rb.AddForce(new Vector3(-1, 0, 0) * Speed * Time.deltaTime, ForceMode.VelocityChange);
+            gotInput = true;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            rb.AddForce(new Vector3(0, 0, 1) * Speed * Time.deltaTime, ForceMode.VelocityChange);
+            gotInput = true;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            rb.AddForce(new Vector3(0, 0, -1) * Speed * Time.deltaTime, ForceMode.VelocityChange);
+            gotInput = true;
+        }
 
-        Vector3 tempVec = new Vector3(h, v, 0);
-        tempVec = tempVec.normalized * Speed * Time.deltaTime;
-        rb.MovePosition(rb.transform.position + tempVec);
+        if (!gotInput)
+        {
+            rb.velocity = Vector3.zero;
+        }
     }
 }
