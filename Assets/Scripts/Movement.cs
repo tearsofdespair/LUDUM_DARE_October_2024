@@ -1,12 +1,21 @@
 using UnityEngine;
+using Zenject;
 
 
 public class Movement : MonoBehaviour
 {
-    public Rigidbody rb;
-    public float Speed = 1;
+    private Rigidbody rb;
+    private float Speed = 1;
     private float _horizontalAxis;
     private float _verticalAxis;
+
+    [Inject]
+    public void Construct(PlayerConfig config)
+    {
+        rb = config.Rigidbody;
+        Speed = config.Speed;
+        Debug.Log("Zenject worked for Player");
+    }
 
     private void Update()
     {
