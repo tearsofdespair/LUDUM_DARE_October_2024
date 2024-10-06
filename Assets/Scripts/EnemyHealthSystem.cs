@@ -22,7 +22,6 @@ public class EnemyHealthSystem : MonoBehaviour
     public void FixedUpdate()
     {
         ActualHealth -= 2;
-        Debug.Log(ActualHealth);
     }
 
 }
