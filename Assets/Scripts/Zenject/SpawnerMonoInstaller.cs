@@ -9,7 +9,7 @@ public class SpawnerMonoInstaller : MonoInstaller
 
     public override void InstallBindings()
     {
-        Container.Bind<List<Wave>>().FromInstance(Waves).NonLazy();
         Container.Bind<ObjectPoolService>().AsSingle().WithArguments<PoolSettings>(new PoolSettings()).NonLazy();
+        Container.Bind<List<Wave>>().FromInstance(Waves).NonLazy();
     }
 }

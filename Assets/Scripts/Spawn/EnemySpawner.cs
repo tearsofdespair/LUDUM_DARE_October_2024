@@ -14,6 +14,8 @@ public class EnemySpawner : MonoBehaviour
         this._poolService = poolService;
         this._waves = waves;
         Debug.Log("Zenject worked for EnemySpawner");
+        Debug.Log(poolService);
+        Debug.Log(waves[0]);
     }
 
     private void Start()
@@ -30,6 +32,7 @@ public class EnemySpawner : MonoBehaviour
                 foreach(GameObject enemy in miniWave.Enemyies)
                 {
                     GameObject enemyInstance = _poolService.Spawn(enemy);
+                    Debug.Log("Worked");
                     enemyInstance.transform.position = miniWave.Spawnoint.position;
                     yield return new WaitForSeconds(miniWave.EnemySpawnColdown);
                 }
