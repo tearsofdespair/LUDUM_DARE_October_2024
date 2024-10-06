@@ -20,6 +20,7 @@ public class Movement : MonoBehaviour
     private void Update()
     {
         HandleAxis();
+        /*RotatePlayer();*/
         MovePlayer();
     }
 
@@ -27,6 +28,11 @@ public class Movement : MonoBehaviour
     {
         _horizontalAxis = Input.GetAxis("Horizontal");
         _verticalAxis = Input.GetAxis("Vertical");
+    }
+
+    private void RotatePlayer()
+    {
+        transform.Rotate(_verticalAxis, _horizontalAxis, 0);
     }
 
     private void MovePlayer()
