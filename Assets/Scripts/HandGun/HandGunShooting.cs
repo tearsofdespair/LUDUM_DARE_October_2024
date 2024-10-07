@@ -6,7 +6,7 @@ public class HandGunShooting : MonoBehaviour
 {
     [SerializeField] private HandGunBulletPool bulletPool;
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
