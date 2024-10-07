@@ -49,7 +49,7 @@ public class Bullet : MonoBehaviour
             other.gameObject.GetComponent<EnemyHealthSystem>().TakeDamage(Damage);
             DestroyBullet();
         }
-        else if (((1 << other.gameObject.layer) & PlayerLayer) != 0)
+        else if (((1 << other.gameObject.layer) & PlayerLayer) != 0 && other.gameObject != gameObject)
         {
             other.gameObject.GetComponent<PlayerHealthSystem>().TakeDamage(Damage);
             DestroyBullet();
