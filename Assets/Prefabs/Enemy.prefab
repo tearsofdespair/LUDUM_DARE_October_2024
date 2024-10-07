@@ -53,7 +53,7 @@ MonoBehaviour:
   Speed: 8
   StoppingDistance: 10
   RetreatDistance: 6
-  PlayerYPosition: 0.671
+  PlayerYPosition: 2
   settings: {fileID: 11400000, guid: b7c0fe902eefc4b4a9bb76ed6b77b451, type: 2}
 --- !u!65 &6761509309642713913
 BoxCollider:
