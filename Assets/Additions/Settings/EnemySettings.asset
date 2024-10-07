@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6c23d72d912b5a4e92dac6b73830d02, type: 3}
   m_Name: EnemySettings
   m_EditorClassIdentifier: 
-  HealthPoints: 846
+  HealthPoints: 2388
   Attack: 955
   Defence: 221
+  ReloadTime: 0.48
+  Projectile: {fileID: 3911327240869772641, guid: 188ccbeb4ef604e408cfb932932b012a, type: 3}
