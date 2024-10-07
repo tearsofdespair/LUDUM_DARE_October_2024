@@ -31,7 +31,7 @@ public class EnemySpawner : MonoBehaviour
             {
                 foreach(GameObject enemy in miniWave.Enemyies)
                 {
-                    GameObject enemyInstance = _poolService.Spawn(enemy);
+                    GameObject enemyInstance = Instantiate(enemy);
                     Debug.Log("Worked");
                     enemyInstance.transform.position = miniWave.Spawnoint.position;
                     yield return new WaitForSeconds(miniWave.EnemySpawnColdown);

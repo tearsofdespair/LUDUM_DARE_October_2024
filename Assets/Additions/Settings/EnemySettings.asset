@@ -15,3 +15,5 @@ MonoBehaviour:
   HealthPoints: 846
   Attack: 955
   Defence: 221
+  ReloadTime: 0.48
+  Projectile: {fileID: 3911327240869772641, guid: 188ccbeb4ef604e408cfb932932b012a, type: 3}

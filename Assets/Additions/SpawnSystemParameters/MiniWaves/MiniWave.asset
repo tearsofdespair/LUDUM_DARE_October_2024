@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c13c77a162b619045abd606337eadc1b, type: 3}
   m_Name: MiniWave
   m_EditorClassIdentifier: 
-  Spawnoint: {fileID: 0}
-  Enemyies: []
-  EnemySpawnColdown: 0
+  Spawnoint: {fileID: 908570929493026969, guid: ff14674dda041e74087bf51bd782fbd0, type: 3}
+  Enemyies:
+  - {fileID: 7058058134843217339, guid: 322864852dc4a0d4fbf6c872f5cdbc4a, type: 3}
+  - {fileID: 7058058134843217339, guid: 322864852dc4a0d4fbf6c872f5cdbc4a, type: 3}
+  - {fileID: 7058058134843217339, guid: 322864852dc4a0d4fbf6c872f5cdbc4a, type: 3}
+  EnemySpawnColdown: 2
