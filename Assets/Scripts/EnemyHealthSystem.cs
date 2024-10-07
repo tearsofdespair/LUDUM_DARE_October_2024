@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,7 @@ using Zenject;
 public class EnemyHealthSystem : MonoBehaviour
 {
     [SerializeField] private EnemySettings EnemySettings;
-    [SerializeField] private EnemyLootSystem EnemyLootSystem;
+    [SerializeField] private LootBag LootBag;
     private float ActualHealth;
 
     private void Awake()
@@ -25,7 +26,7 @@ public class EnemyHealthSystem : MonoBehaviour
     
     private void Die()
     {
-
+        LootBag.InstantiateLoot(transform.position);
         Destroy(gameObject);
     }
 
