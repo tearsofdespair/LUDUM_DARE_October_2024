@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c13c77a162b619045abd606337eadc1b, type: 3}
   m_Name: MiniWave
   m_EditorClassIdentifier: 
-  Spawnoint: {fileID: 0}
+  Spawnoint: {fileID: 315112025040004781, guid: 3b62baf65cd379440a725ce585ac9cb9, type: 3}
   Enemyies: []
-  EnemySpawnColdown: 0
+  EnemySpawnColdown: 3
