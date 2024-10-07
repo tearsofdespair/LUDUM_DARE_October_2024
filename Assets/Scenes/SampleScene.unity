@@ -7443,6 +7443,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Waves:
   - {fileID: 11400000, guid: e5939f535e0af474f816f19805f68a1e, type: 2}
+  - {fileID: 11400000, guid: 905f704d3bd70184abda819d190af4aa, type: 2}
+  - {fileID: 11400000, guid: e67336f96881e1e41b9913b79caf3935, type: 2}
 --- !u!1001 &1849151046
 PrefabInstance:
   m_ObjectHideFlags: 0

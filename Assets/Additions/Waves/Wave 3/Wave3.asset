@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45dc211047b048e43b26ed639804e505, type: 3}
   m_Name: Wave3
   m_EditorClassIdentifier: 
-  MiniWaves: []
+  MiniWaves:
+  - {fileID: 11400000, guid: 89f4d73865854954babaf83bf15f5574, type: 2}
+  - {fileID: 11400000, guid: 557f30024f5f59e4d8a7a1acf7b54071, type: 2}
+  - {fileID: 11400000, guid: 7cb9a0ea261ceba4081b105a2221d3c4, type: 2}
+  - {fileID: 11400000, guid: 3200c85b775815e4fbd89f9a72f0c6ed, type: 2}
   MiniWavesGap: 0
