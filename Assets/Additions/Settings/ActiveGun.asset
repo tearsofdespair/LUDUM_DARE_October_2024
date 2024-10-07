@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c38f6cb207d76b149a7f2fef74817e4b, type: 3}
-  m_Name: StartPlayerSettings
+  m_Script: {fileID: 11500000, guid: 4105be1739e78e24a8d66c1a0d281087, type: 3}
+  m_Name: ActiveGun
   m_EditorClassIdentifier: 
-  HealthPoints: 4726
-  Attack: 637
-  Defence: 346
+  LootPrefab: {fileID: 6443085594890975024, guid: f1264e466f7e11342a744df8a4e02717, type: 3}
+  LootName: ActiveGun
+  DropChance: 15

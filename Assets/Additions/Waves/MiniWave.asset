@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c38f6cb207d76b149a7f2fef74817e4b, type: 3}
-  m_Name: StartPlayerSettings
+  m_Script: {fileID: 11500000, guid: c13c77a162b619045abd606337eadc1b, type: 3}
+  m_Name: MiniWave
   m_EditorClassIdentifier: 
-  HealthPoints: 4726
-  Attack: 637
-  Defence: 346
+  Spawnoint: {fileID: 0}
+  Enemyies: []
+  EnemySpawnColdown: 0

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c13c77a162b619045abd606337eadc1b, type: 3}
+  m_Name: MiniWave
+  m_EditorClassIdentifier: 
+  Spawnoint: {fileID: 908570929493026969, guid: ff14674dda041e74087bf51bd782fbd0, type: 3}
+  Enemyies:
+  - {fileID: 7058058134843217339, guid: 322864852dc4a0d4fbf6c872f5cdbc4a, type: 3}
+  - {fileID: 7058058134843217339, guid: 322864852dc4a0d4fbf6c872f5cdbc4a, type: 3}
+  - {fileID: 7058058134843217339, guid: 322864852dc4a0d4fbf6c872f5cdbc4a, type: 3}
+  EnemySpawnColdown: 2

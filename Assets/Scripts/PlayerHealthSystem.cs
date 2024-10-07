@@ -1,19 +1,16 @@
-using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Zenject;
+using UnityEngine.SceneManagement;
 
-public class EnemyHealthSystem : MonoBehaviour
+public class PlayerHealthSystem : MonoBehaviour
 {
-    [SerializeField] private EnemySettings EnemySettings;
-    [SerializeField] private LootBag LootBag;
-    [SerializeField] private LayerMask PlayerBulletsLayer;
+    [SerializeField] private PlayerSettings PlayerSettings;
     private float ActualHealth;
 
     private void Awake()
     {
-        ActualHealth = EnemySettings.HealthPoints;
+        ActualHealth = PlayerSettings.HealthPoints;
     }
 
 
@@ -30,7 +27,7 @@ public class EnemyHealthSystem : MonoBehaviour
     {
         ActualHealth -= damage;
         Debug.Log(ActualHealth);
-        if(ActualHealth <= 0)
+        if (ActualHealth <= 0)
         {
             Die();
         }
@@ -38,8 +35,7 @@ public class EnemyHealthSystem : MonoBehaviour
 
     private void Die()
     {
-        LootBag.InstantiateLoot(transform.position);
-        Destroy(gameObject);
+        SceneManager.LoadScene(0);
     }
-
 }
+
