@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4105be1739e78e24a8d66c1a0d281087, type: 3}
   m_Name: ActiveGun
   m_EditorClassIdentifier: 
-  LootPrefab: {fileID: 4026114309566482675, guid: f1264e466f7e11342a744df8a4e02717, type: 3}
+  LootPrefab: {fileID: 6443085594890975024, guid: f1264e466f7e11342a744df8a4e02717, type: 3}
   LootName: ActiveGun
-  DropChance: 40
+  DropChance: 15

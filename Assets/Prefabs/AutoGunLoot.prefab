@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 519429758509146504}
   - component: {fileID: 1975144671902341540}
   m_Layer: 0
-  m_Name: Cube.047
+  m_Name: MovablePart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

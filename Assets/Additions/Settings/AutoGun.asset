@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4105be1739e78e24a8d66c1a0d281087, type: 3}
   m_Name: AutoGun
   m_EditorClassIdentifier: 
-  LootPrefab: {fileID: 7001818752440249761, guid: ba0c0ae154196f84aa63651a0a870891, type: 3}
+  LootPrefab: {fileID: 4079234014733262570, guid: ba0c0ae154196f84aa63651a0a870891, type: 3}
   LootName: AutoGun
-  DropChance: 15
+  DropChance: 20
