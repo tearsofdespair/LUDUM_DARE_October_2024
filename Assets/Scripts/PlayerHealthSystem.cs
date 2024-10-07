@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealthSystem : MonoBehaviour
 {
@@ -34,7 +35,7 @@ public class PlayerHealthSystem : MonoBehaviour
 
     private void Die()
     {
-        Destroy(gameObject);
+        SceneManager.LoadScene(0);
     }
 }
 
